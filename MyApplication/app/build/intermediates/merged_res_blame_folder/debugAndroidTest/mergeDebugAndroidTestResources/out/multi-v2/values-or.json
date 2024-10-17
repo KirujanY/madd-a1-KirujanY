@@ -4,7 +4,7 @@
             "outputFile": "com.example.usedmart.test.app-mergeDebugAndroidTestResources-32:/values-or/values-or.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kirujan\\.gradle\\caches\\transforms-4\\ffda4db95114b6e29daec27f26ae2296\\transformed\\ui-release\\res\\values-or\\values-or.xml",
+                    "source": "C:\\Users\\kirujan\\.gradle\\caches\\transforms-4\\ce889b173715476c82ffaadadc59b73d\\transformed\\ui-release\\res\\values-or\\values-or.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\kirujan\\.gradle\\caches\\transforms-4\\47917e60014e03dc6d32765216502436\\transformed\\core-1.13.1\\res\\values-or\\values-or.xml",
+                    "source": "C:\\Users\\kirujan\\.gradle\\caches\\transforms-4\\faac129382fa6ea0cc361a7777a0ef01\\transformed\\core-1.13.1\\res\\values-or\\values-or.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

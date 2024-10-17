@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -24,6 +25,9 @@ import java.lang.String;
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final LinearLayout cartBtn;
 
   @NonNull
   public final DotsIndicator dotIndicator;
@@ -106,7 +110,7 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final RecyclerView viewPopular;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView,
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout cartBtn,
       @NonNull DotsIndicator dotIndicator, @NonNull ImageView imageView,
       @NonNull ImageView imageView2, @NonNull ImageView imageView41, @NonNull ImageView imageView42,
       @NonNull ImageView imageView43, @NonNull ImageView imageView44,
@@ -119,6 +123,7 @@ public final class ActivityMainBinding implements ViewBinding {
       @NonNull TextView textView84, @NonNull TextView textView85, @NonNull RecyclerView viewBrand,
       @NonNull ViewPager2 viewPageSlider, @NonNull RecyclerView viewPopular) {
     this.rootView = rootView;
+    this.cartBtn = cartBtn;
     this.dotIndicator = dotIndicator;
     this.imageView = imageView;
     this.imageView2 = imageView2;
@@ -175,6 +180,12 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.cartBtn;
+      LinearLayout cartBtn = ViewBindings.findChildViewById(rootView, id);
+      if (cartBtn == null) {
+        break missingId;
+      }
+
       id = R.id.dotIndicator;
       DotsIndicator dotIndicator = ViewBindings.findChildViewById(rootView, id);
       if (dotIndicator == null) {
@@ -333,7 +344,7 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, dotIndicator, imageView,
+      return new ActivityMainBinding((ConstraintLayout) rootView, cartBtn, dotIndicator, imageView,
           imageView2, imageView41, imageView42, imageView43, imageView44, imageView45, main,
           progressBarAd, progressBarBrand, progressBarPopular, scrollView2, textView, textView2,
           textView3, textView4, textView5, textView6, textView81, textView82, textView83,

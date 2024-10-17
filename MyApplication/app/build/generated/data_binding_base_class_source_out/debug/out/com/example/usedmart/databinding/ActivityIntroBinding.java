@@ -31,10 +31,10 @@ public final class ActivityIntroBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
-  public final TextView textView10;
+  public final TextView signupTxt;
 
   @NonNull
-  public final TextView textView11;
+  public final TextView textView10;
 
   @NonNull
   public final TextView textView8;
@@ -44,14 +44,14 @@ public final class ActivityIntroBinding implements ViewBinding {
 
   private ActivityIntroBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imageView3,
       @NonNull AppCompatButton introBtn, @NonNull ConstraintLayout main,
-      @NonNull TextView textView10, @NonNull TextView textView11, @NonNull TextView textView8,
+      @NonNull TextView signupTxt, @NonNull TextView textView10, @NonNull TextView textView8,
       @NonNull TextView textView9) {
     this.rootView = rootView;
     this.imageView3 = imageView3;
     this.introBtn = introBtn;
     this.main = main;
+    this.signupTxt = signupTxt;
     this.textView10 = textView10;
-    this.textView11 = textView11;
     this.textView8 = textView8;
     this.textView9 = textView9;
   }
@@ -97,15 +97,15 @@ public final class ActivityIntroBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
-      id = R.id.textView10;
-      TextView textView10 = ViewBindings.findChildViewById(rootView, id);
-      if (textView10 == null) {
+      id = R.id.signupTxt;
+      TextView signupTxt = ViewBindings.findChildViewById(rootView, id);
+      if (signupTxt == null) {
         break missingId;
       }
 
-      id = R.id.textView11;
-      TextView textView11 = ViewBindings.findChildViewById(rootView, id);
-      if (textView11 == null) {
+      id = R.id.textView10;
+      TextView textView10 = ViewBindings.findChildViewById(rootView, id);
+      if (textView10 == null) {
         break missingId;
       }
 
@@ -122,7 +122,7 @@ public final class ActivityIntroBinding implements ViewBinding {
       }
 
       return new ActivityIntroBinding((ConstraintLayout) rootView, imageView3, introBtn, main,
-          textView10, textView11, textView8, textView9);
+          signupTxt, textView10, textView8, textView9);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
